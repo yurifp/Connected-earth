@@ -26,7 +26,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/yourusername/connected-earth.git"
+    "url": "git+https://github.com/yourusername/connected-earth.git"
   },
   "dependencies": {
     "angular": "^1.8.3",
@@ -35,8 +35,8 @@
     "three": "^0.128.0"
   },
   "devDependencies": {
-    "http-server": "^14.1.1",
-    "gh-pages": "^5.0.0"
+    "gh-pages": "^5.0.0",
+    "http-server": "^14.1.1"
   },
   "browsers": [
     "> 1%",
@@ -60,15 +60,29 @@
     "development-time": "48 hours",
     "target-audience": [
       "Students",
-      "Educators", 
+      "Educators",
       "General Public",
       "Policy Makers"
     ],
     "technologies": {
-      "frontend": ["Angular.js", "HTML5", "CSS3"],
-      "visualization": ["D3.js", "Three.js"],
-      "data": ["NASA APIs", "Earth Observation Data"],
-      "deployment": ["GitHub Pages", "Netlify", "Vercel"]
+      "frontend": [
+        "Angular.js",
+        "HTML5",
+        "CSS3"
+      ],
+      "visualization": [
+        "D3.js",
+        "Three.js"
+      ],
+      "data": [
+        "NASA APIs",
+        "Earth Observation Data"
+      ],
+      "deployment": [
+        "GitHub Pages",
+        "Netlify",
+        "Vercel"
+      ]
     },
     "features": [
       "Interactive Earth Systems Map",
@@ -79,5 +93,14 @@
       "Offline Support (PWA)",
       "Multi-language Support"
     ]
-  }
+  },
+  "directories": {
+    "doc": "docs"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/connected-earth/issues"
+  },
+  "homepage": "https://github.com/yourusername/connected-earth#readme"
+  
 }
+

@@ -2,12 +2,12 @@
 <html lang="en" ng-app="connectedEarthApp">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
     <title>Connected Earth - NASA Space Apps Challenge</title>
     
     <!-- External Libraries -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular-animate.min.js"></script>
+   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.8.3/angular-animate.min.js"></script>-->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.8.5/d3.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
     
@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="styles.css">
     <script src="data.js"></script>
     <script src="app.js"></script>
+    <script src="nasa-api.js"></script>
 </head>
 <body ng-controller="MainController">
     <!-- Loading Screen -->
@@ -51,9 +52,9 @@
             <div ng-repeat="system in earthSystems" 
                  class="system-node" 
                  ng-class="{'active': selectedSystem === system}"
-                 ng-style="{left: system.x + 'px', top: system.y + 'px'}"
+                 ng-style="{'left': system.x + 'px', 'top': system.y + 'px'}"
                  ng-click="selectSystem(system)"
-                 style="animation-delay: {{$index * 0.2}}s">
+                 ng-attr-style="animation-delay: {{$index * 0.2}}s">
                 <div class="system-icon">{{system.icon}}</div>
                 <div class="system-label">{{system.name}}</div>
             </div>
