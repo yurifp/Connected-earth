@@ -1,0 +1,83 @@
+{
+  "name": "connected-earth-nasa-space-apps",
+  "version": "1.0.0",
+  "description": "Interactive web application for NASA Space Apps Challenge 2024 - Imagine our Connected Earth",
+  "main": "app.js",
+  "scripts": {
+    "start": "http-server -p 8000",
+    "dev": "http-server -p 8000 -c-1",
+    "build": "echo 'No build process required for this project'",
+    "test": "echo 'No tests configured'",
+    "deploy": "gh-pages -d ."
+  },
+  "keywords": [
+    "NASA",
+    "Space Apps Challenge",
+    "Climate Change",
+    "Earth Systems",
+    "Angular.js",
+    "Data Visualization",
+    "Environmental",
+    "Education",
+    "Interactive",
+    "D3.js"
+  ],
+  "author": "Your Team Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/connected-earth.git"
+  },
+  "dependencies": {
+    "angular": "^1.8.3",
+    "angular-animate": "^1.8.3",
+    "d3": "^7.8.5",
+    "three": "^0.128.0"
+  },
+  "devDependencies": {
+    "http-server": "^14.1.1",
+    "gh-pages": "^5.0.0"
+  },
+  "browsers": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ],
+  "nasa-apis": {
+    "endpoints": {
+      "earthImagery": "https://api.nasa.gov/planetary/earth/imagery",
+      "climate": "https://climate.nasa.gov/system/internal_resources/",
+      "firms": "https://firms.modaps.eosdis.nasa.gov/api/",
+      "airQuality": "https://api.nasa.gov/insight_weather/"
+    },
+    "documentation": "https://api.nasa.gov/"
+  },
+  "project-info": {
+    "challenge": "Imagine our Connected Earth",
+    "year": 2024,
+    "category": "Climate Action",
+    "team-size": 4,
+    "development-time": "48 hours",
+    "target-audience": [
+      "Students",
+      "Educators", 
+      "General Public",
+      "Policy Makers"
+    ],
+    "technologies": {
+      "frontend": ["Angular.js", "HTML5", "CSS3"],
+      "visualization": ["D3.js", "Three.js"],
+      "data": ["NASA APIs", "Earth Observation Data"],
+      "deployment": ["GitHub Pages", "Netlify", "Vercel"]
+    },
+    "features": [
+      "Interactive Earth Systems Map",
+      "Climate Scenario Simulator",
+      "Real-time Data Visualization",
+      "Educational Story Mode",
+      "Responsive Design",
+      "Offline Support (PWA)",
+      "Multi-language Support"
+    ]
+  }
+}
